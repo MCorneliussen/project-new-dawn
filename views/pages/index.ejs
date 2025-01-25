@@ -1,0 +1,10 @@
+<%- include('../partials/header'); -%>
+
+    <main class="container mt-5 text-center">
+        <h1>Welcome to Project New Dawn</h1>
+        <p>This is Project New Dawn, a template for your next project.</p>
+        <% if (user) { %>
+            <h2>Greetings, <%= user.displayName.split(' ')[0] %>!</h2>
+    <% } %>
+</main>
+<%- include('../partials/footer'); -%>

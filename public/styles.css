@@ -1,0 +1,68 @@
+/* ============================================= */
+/* General Layout and Structure */
+/* ============================================= */
+
+/* Apply flexbox layout for the entire body and html */
+html,
+body {
+    height: 100%; /* Ensure the height is 100% of the viewport */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content container to grow and push the footer down */
+main {
+    flex: 1; /* Allows main content to grow and fill space */
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* ============================================= */
+/* Navbar Styles */
+/* ============================================= */
+
+/* Navbar link styles */
+.navbar .nav-link {
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover animation */
+}
+
+.navbar .nav-link:hover {
+    transform: scale(1.1); /* Increase size by 10% */
+    color: #f8f9fa; /* Optional: Change text color on hover */
+}
+
+/* Icon alignment within navbar */
+.navbar .nav-link i {
+    vertical-align: middle; /* Align icon with text */
+    margin-right: 0.3rem; /* Add spacing between icon and text */
+    line-height: 1; /* Prevent icon from affecting row height */
+}
+
+/* ============================================= */
+/* Icon-Specific Styles */
+/* ============================================= */
+
+/* Rotate effect for icons */
+.nav-link i {
+    transition: transform 0.2s ease-in-out; /* Smooth animation on hover */
+}
+
+.nav-link:hover i {
+    transform: rotate(20deg); /* Rotate slightly when hovered */
+}
+
+/* Profile-specific icon rotation */
+.profile-icon {
+    transition: transform 0.2s ease-in-out;
+}
+
+.profile-icon:hover {
+    transform: rotate(20deg);
+}

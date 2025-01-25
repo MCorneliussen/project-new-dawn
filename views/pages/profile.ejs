@@ -1,0 +1,11 @@
+<%- include('../partials/header'); -%>
+    <main class="container mt-5">
+        <h1>Your Profile</h1>
+        <p>Welcome, <%= user.displayName %>!</p>
+        <p>Email: <%= user.emails[0].value %>
+        </p>
+        <p>Google ID: <%= user.id %>
+        </p>
+        <img src="<%= user.photos[0].value %>" alt="Profile Picture" class="rounded-circle" style="width: 150px;">
+    </main>
+    <%- include('../partials/footer'); -%>
