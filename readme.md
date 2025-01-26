@@ -11,8 +11,14 @@ Project New Dawn is a modular and beginner-friendly template for building full-s
 - **Error Handling**: Modular error handling middleware with custom 404 and 500 pages.
 - **Responsive Design**: Pre-integrated with Bootstrap for mobile-friendly layouts.
 - **Modular Structure**: Clean and scalable file organization for maintainability.
+---
+
+## Features To Come
+- **More OAuth Authentication Providors**:
 
 ---
+
+
 
 ## Installation
 
@@ -51,30 +57,6 @@ Project New Dawn is a modular and beginner-friendly template for building full-s
 
 ---
 
-## File Structure
-
-```
-project-new-dawn/
-├── app.js                  # Main application file
-├── package.json            # Project metadata and dependencies
-├── .env                    # Environment variables (not included in Git)
-├── public/                 # Static files (CSS, images, etc.)
-├── routes/                 # Application routes
-│   ├── index.js            # General routes (Home, About)
-│   ├── auth.js             # Authentication routes (Login, Logout)
-│   ├── profile.js          # Profile-related routes
-├── middlewares/            # Custom middleware
-│   ├── errorHandler.js     # Error handling middleware
-│   ├── isAuthenticated.js  # Authentication check middleware
-│   ├── passport.js         # Passport.js configuration
-├── views/                  # EJS templates
-│   ├── pages/              # Full-page views (Home, About, Profile)
-│   ├── partials/           # Reusable components (Header, Footer)
-│   ├── errors/             # Error pages (404, 500)
-└── styles.css              # Custom CSS
-```
-
----
 
 ## Dependencies
 
